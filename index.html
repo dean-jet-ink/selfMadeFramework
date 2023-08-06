@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="http://localhost:8080/style.css" />
+  </head>
+  <body>
+    <form action="/post" method="post" enctype="multipart/form-data">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" value="{{.Name}}" />
+      </div>
+      <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" />
+      </div>
+      <div>
+        <input type="file" name="file" />
+      </div>
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
